@@ -13,6 +13,9 @@ class Caminhao ( Veiculo.Veiculo ):
         
     def desligar( self ):
        self.marcha = 1
+
+    def dirigir(self):
+        return f"{self.marca} {self.modelo} está acelerando."
         
 """ Aqui comeca o teste (alterar para fazer teste) """
 CaminhaoNovo = Caminhao('8885AZKG01Z12A33921312', 'Scania', 'S2000', '2023', 3, 'Dupla', 'Freio Hidraulico')
