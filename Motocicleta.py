@@ -10,6 +10,8 @@ class Motocicleta( Veiculo.Veiculo ):
         return self.marcha
     def desligar( self ):
         self.marcha = 1
+    def dirigir(self):
+        return f"{self.marca} {self.modelo} está acelerando."
 """ Aqui comeca o teste """
 Moto = Motocicleta('5AZKG01Z12A339037', 'Honda', 'CG', '2015', 1200, 2)
 print(Moto.get_tipo())
