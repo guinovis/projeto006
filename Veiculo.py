@@ -9,7 +9,11 @@ class Veiculo:
         return self.__tipo
     def set_tipo(self,tipo):
         self.__tipo = tipo
+
+    
     """ Interfaces """
+    def dirigir(self):
+        pass
     def ligar( self ):
         pass
     def desligar( self ):
