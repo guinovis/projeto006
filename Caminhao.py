@@ -6,13 +6,18 @@ class Caminhao ( Veiculo.Veiculo ):
         self.eixo = eixo
         self.cabine = cabine
         self.tipoDeFreio = tipoDeFreio
+        self.marcha = 1
+        
     def ligar( self ):
-      pass 
+      return self.marcha
+        
     def desligar( self ):
-      pass
+       self.marcha = 1
+        
 """ Aqui comeca o teste (alterar para fazer teste) """
-Caminhao = Caminhao('8885AZKG01Z12A33921312', 'JAC', 'J3', '2022', 2.0, 'HATCH')
-print(CarroNovo.get_tipo())
-print(CarroNovo.potencia)
-print(CarroNovo.tipoCarro)
-print(CarroNovo.ligar())
+CaminhaoNovo = Caminhao('8885AZKG01Z12A33921312', 'Scania', 'S2000', '2023', 3, 'Dupla', 'Freio Hidraulico')
+print(CaminhaoNovo.eixo)
+print(CaminhaoNovo.cabine)
+print(CaminhaoNovo.tipoDeFreio)
+print(CaminhaoNovo.ligar())
+print(CaminhaoNovo.desligar())
