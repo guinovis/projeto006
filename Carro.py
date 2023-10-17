@@ -10,6 +10,8 @@ class Carro ( Veiculo.Veiculo ):
         return self.marcha
     def desligar( self ):
         self.marcha = 0
+    def dirigir(self):
+        return f"{self.marca} {self.modelo} está acelerando."
 """ Aqui comeca o teste """
 CarroNovo = Carro('8885AZKG01Z12A33921312', 'JAC', 'J3', '2022', 2.0, 'HATCH')
 print(CarroNovo.get_tipo())
